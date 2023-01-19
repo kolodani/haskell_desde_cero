@@ -1,3 +1,7 @@
+{-
+PRIMEROS PASOS EN HASKELL
+-}
+
 prueba = print "Hola Programador"
 
 galleta = print "Elmo quiere una galleta"

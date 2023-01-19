@@ -1,4 +1,8 @@
 {-
+FUNCIONES, CONDICIONALES, CONVERTIR NUMERO A CADENA Y VICEVERSA
+-}
+
+{-
 creacion de funciones
 -}
 
