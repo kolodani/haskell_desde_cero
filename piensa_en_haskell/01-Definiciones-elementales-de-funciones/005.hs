@@ -5,3 +5,4 @@
 
 ultimaCifra :: Int -> Int
 ultimaCifra x = rem x 10
+-- rem es el resto de la division entera
