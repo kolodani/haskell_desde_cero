@@ -24,4 +24,13 @@ xor2 False y = y
     1.20.3
 -}
 
+xor3 :: Bool -> Bool -> Bool
 xor3 x y = (x || y) && not (x && y)
+
+
+{-
+    1.20.4
+-}
+
+xor4 :: Bool -> Bool -> Bool
+xor4 x y = (x /= y)
