@@ -32,3 +32,16 @@ todosPares n = and [even x | x <- numerosAbundantesMenores n]
 -- luego lo asigno a una lista x
 -- por ultimo aplico la funcion even a cada elemento de la lista x
 -- y si todos los elementos de la lista x son pares entonces todosPares es True
+
+
+{-
+      2.5.4
+-}
+
+primerAbundanteImpar :: Int
+primerAbundanteImpar = head [x | x <- [1..], numeroAbundante x, odd x]
+-- creo una lista de los numeros abundantes a n
+-- luego lo asigno a una lista x
+-- por ultimo aplico la funcion odd a cada elemento de la lista x
+-- y encuentro todos los numeros impares de la lista x
+-- luego con la funcion head encuentro el primer elemento de la lista x
