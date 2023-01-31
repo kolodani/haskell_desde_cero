@@ -20,3 +20,15 @@ numeroAbundante n = sum (divisores n) > n
 numerosAbundantesMenores :: Int -> [Int]
 numerosAbundantesMenores n = [x | x <- [1..n], numeroAbundante x]
 -- hago una lista de los numeros x que les aplico la funcion numeroAbundante
+
+
+{-
+      2.5.3
+-}
+
+todosPares :: Int -> Bool
+todosPares n = and [even x | x <- numerosAbundantesMenores n]
+-- creo una lista de todos los numeros abundantes a n
+-- luego lo asigno a una lista x
+-- por ultimo aplico la funcion even a cada elemento de la lista x
+-- y si todos los elementos de la lista x son pares entonces todosPares es True
