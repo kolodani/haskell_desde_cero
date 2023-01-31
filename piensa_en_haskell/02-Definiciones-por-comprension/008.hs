@@ -31,3 +31,11 @@ aproxE' n = 1 + sum [1 / factorial k | k <- [1..n]]
 
 factorial :: (Num a, Enum a) => a -> a
 factorial n = product [1..n]
+
+
+{-
+      2.8.4
+-}
+
+e :: Double
+e = 2.71828459
