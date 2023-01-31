@@ -20,3 +20,14 @@ errorAproxE x = head [m | m <- [1..], abs((exp 1) - (1+1/m)**m) < x]
 -- luego aplico la funcion abs para que no me de negativos
 -- y luego busco el primer elemento de la lista
 -- que cumpla con la condicion con la funcion head
+
+
+{-
+      2.8.3
+-}
+
+aproxE' :: (Enum a, Fractional a) => a -> a
+aproxE' n = 1 + sum [1 / factorial k | k <- [1..n]]
+
+factorial :: (Num a, Enum a) => a -> a
+factorial n = product [1..n]
