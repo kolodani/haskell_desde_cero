@@ -32,6 +32,10 @@ aproxE' n = 1 + sum [1 / factorial k | k <- [1..n]]
 factorial :: (Num a, Enum a) => a -> a
 factorial n = product [1..n]
 
+-- primero calculo el factorial un numero con la funcion factorial
+-- luego calculo la suma de los factoriales de 1 hasta n
+-- y luego le sumo 1
+
 
 {-
       2.8.4
@@ -39,3 +43,17 @@ factorial n = product [1..n]
 
 e :: Double
 e = 2.71828459
+
+-- el numero de Euler
+
+{-
+      2.8.5
+-}
+
+errorE' :: Double -> Double
+errorE' x = head [n | n <- [0..], abs(aproxE' n - e) < x]
+
+-- calculo el error de la aproximacion de e
+-- con la funcion aproxE' y el numero de Euler
+-- y luego busco el primer elemento de la lista
+-- que cumpla con la condicion con la funcion head
