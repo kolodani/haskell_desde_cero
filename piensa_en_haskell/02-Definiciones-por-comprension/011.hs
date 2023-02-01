@@ -16,3 +16,11 @@ pitagoricas n = [(x, y, z) |  x <- [1..n],
 
 numeroDePares :: (Int, Int, Int) -> Int
 numeroDePares (x,y,z) = sum [1 | n <- [x,y,z], even n]
+
+
+{-
+      2.11.3
+-}
+
+conjetura :: Int -> Bool
+conjetura n = and [odd (numeroDePares t) | t <- pitagoricas n]
