@@ -19,3 +19,11 @@ personas = [("Cervantes", "Literatura", 1547, 1616),
 
 nombres :: [(String, String, Int, Int)] -> [String]
 nombres bd = [x | (x, _, _, _) <- bd]
+
+
+{-
+      2.18.2
+-}
+
+musicos :: [(String, String, Int, Int)] -> [String]
+musicos bd = [x | (x, m, _, _) <- bd, m == "Musica"]
