@@ -27,3 +27,12 @@ nombres bd = [x | (x, _, _, _) <- bd]
 
 musicos :: [(String, String, Int, Int)] -> [String]
 musicos bd = [x | (x, m, _, _) <- bd, m == "Musica"]
+
+
+
+{-
+      2.18.3
+-}
+
+seleccion :: [(String, String, Int, Int)] -> String -> [String]
+seleccion bd m = [x | (x, m', _, _) <- bd, m == m']
