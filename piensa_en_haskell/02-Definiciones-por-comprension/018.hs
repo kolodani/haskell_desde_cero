@@ -44,3 +44,11 @@ seleccion bd m = [x | (x, m', _, _) <- bd, m == m']
 
 musicos' :: [(String, String, Int, Int)] -> [String]
 musicos' bd = seleccion bd "Musica"
+
+
+{-
+      2.18.5
+-}
+
+vivas :: [(String, String, Int, Int)] -> Int -> [String]
+vivas ps a = [x | (x, _, a1, a2) <- ps, a1 <= a, a <= a2]
