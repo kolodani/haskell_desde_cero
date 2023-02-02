@@ -16,3 +16,6 @@ personas = [("Cervantes", "Literatura", 1547, 1616),
             ("Botticelli", "Pintura", 1445, 1510),
             ("Borromini", "Arquitectura", 1599,1667),
             ("Bach", "Musica", 1685, 1750)]
+
+nombres :: [(String, String, Int, Int)] -> [String]
+nombres bd = [x | (x, _, _, _) <- bd]
