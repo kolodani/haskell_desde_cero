@@ -36,3 +36,11 @@ musicos bd = [x | (x, m, _, _) <- bd, m == "Musica"]
 
 seleccion :: [(String, String, Int, Int)] -> String -> [String]
 seleccion bd m = [x | (x, m', _, _) <- bd, m == m']
+
+
+{-
+      2.18.4
+-}
+
+musicos' :: [(String, String, Int, Int)] -> [String]
+musicos' bd = seleccion bd "Musica"
